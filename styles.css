@@ -1,0 +1,44 @@
+@page { size: 8.5in 14in; 
+       margin: 0.79in; 
+}
+
+body { overflow-x: hidden;
+      color: #2595ff;
+      background-color: midnightblue;
+      font-family: 'Liberation Mono', monospace;
+}
+
+p { line-height: 115%; 
+   margin-bottom: 0.1in;
+   background: transparent;
+   align: center;
+   font-size: large;
+}
+
+.break {
+   margin-bottom: 0in;
+}
+.img-desktop {
+    display: none;
+}
+
+.img-mobile {
+    align: center;
+    width: 100vw;
+    height: 55vh;
+}
+
+@media (min-width: 1080px) {
+  p {
+    align: left;
+ }
+  .img-mobile {
+       display: none;
+ }
+  .img-desktop {
+       display: block;
+       align: center;
+       width: 100vw;
+       height: 100vh;
+  }
+}
